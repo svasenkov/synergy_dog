@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, dog.synergy.domain.User.class.getName());
             createCache(cm, dog.synergy.domain.Authority.class.getName());
             createCache(cm, dog.synergy.domain.User.class.getName() + ".authorities");
+            createCache(cm, dog.synergy.domain.Board.class.getName());
+            createCache(cm, dog.synergy.domain.Task.class.getName());
+            createCache(cm, dog.synergy.domain.Task.class.getName() + ".tags");
+            createCache(cm, dog.synergy.domain.Tag.class.getName());
+            createCache(cm, dog.synergy.domain.Tag.class.getName() + ".tasks");
             // jhipster-needle-ehcache-add-entry
         };
     }

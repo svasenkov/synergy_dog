@@ -42,7 +42,9 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Board", "Task", "Tag"],
+    "lastLiquibaseTimestamp": 1642110267000
   },
   "git-provider": "GitHub",
   "git-company": "svasenkov",
