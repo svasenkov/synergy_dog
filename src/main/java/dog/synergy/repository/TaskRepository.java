@@ -25,4 +25,8 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
 
     @Query("select task from Task task left join fetch task.tags where task.id =:id")
     Optional<Task> findOneWithEagerRelationships(@Param("id") Long id);
+
+    @Query("select count(task) from Task task where task.board is not null")
+    Long findAllTaskWhereBoardIsNotNull();
+
 }
